@@ -1,0 +1,118 @@
+.main {
+	 background: linear-gradient(to bottom, rgb(242,242,242), rgb(250,250,250));
+	 overflow: hidden;
+}
+/*.radioStation_content{
+	margin: 30px 0;
+}*/
+/*侧导航栏*/
+.radio_sideBar{
+	display: inline-block;
+	margin-top: 30px;
+	border-left: 1px solid #ccc;
+}
+.radio{
+	overflow: hidden;
+}
+.cont{
+	margin: 0px 0px 40px 0px;
+}
+.radio_sideBar .radio_sideBar_item{
+	display: block;
+	padding-left: 63px;
+	line-height: 59px;
+	font-size: 15px;
+	position: relative;
+}
+.radio_sideBar_item:after{
+	content: '';
+	position: absolute;
+	overflow: hidden;
+	height: 1px;
+	width: 37px;
+	left: 0;
+	top: 50%;
+	background: #ccc;
+}
+/*.current_item{
+	background: #31c27c;
+	
+}*/
+.current_item:after{
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 43px;
+	left: 0;
+	top: 50%;
+	background: #31c27c;
+}
+
+/*right*/
+.radioList{
+	width: 1020px;
+	display: inline-block;
+	float: right;
+	margin-top: 50px;
+	/*background: pink;*/
+	/*margin-left: 20px;*/
+}
+.radioList h4{
+	font-weight: normal;
+	position: relative;
+	color: #999;
+}
+.radioList h4:after{
+	content: '';
+	position: absolute;
+	height: 1px;
+	width: 900px;
+	left: 0;
+	top: 50%;
+	margin-left: 50px;
+	background: #ddd;
+}
+
+
+/*图片播放按钮*/
+.radio li{
+	width: 224px;
+	height: 305px;
+	margin: 30px 8px;
+}
+.radio li p:hover{
+	color:#31c27c;
+	cursor: pointer; 
+}
+.radio li p:nth-child(3){
+	color: #ccc;
+}
+.radio li p:nth-child(4){
+	color: #ccc;
+}
+.radio li p:nth-child(4):hover{
+	cursor:auto;
+}
+.img_play{
+	position: relative;
+	overflow: hidden;
+	/*transition: 1s;*/
+
+}
+ .pic{
+	width: 224px;
+	height: 224px;
+	transition: 1s;
+}
+.pic:hover{
+	transform: scale(1.1);
+}
+.cover_play{
+	 position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -35px;
+    width: 70px;
+    height: 70px;
+    display: none;
+}

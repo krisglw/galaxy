@@ -1,0 +1,73 @@
+.main {
+	 background: linear-gradient(to bottom, rgb(242,242,242), rgb(250,250,250));
+	 overflow: hidden;
+}
+.main .newCD_box_tag .current {
+	background: #31c27c;
+	color: #fff;
+	padding: 5px;
+}
+ .newCD_box_tag{
+ 	margin-left: 40px;
+ 	overflow: hidden;
+ }
+.newCD_box_tag li{
+	width: 50px;
+	height: 30px;
+	margin: 20px;
+}
+.CDList li{
+	width: 224px;
+	height: 305px;
+	margin: 30px 8px;
+}
+.CDList li p:hover{
+	color:#31c27c;
+	cursor: pointer; 
+}
+.CDList li p:nth-child(3){
+	color: #ccc;
+	font-size: 14px;
+}
+.CDList li p:nth-child(4){
+	color: #ccc;
+	font-size: 14px;
+}
+.CDList li p:nth-child(4):hover{
+	cursor:auto;
+}
+.img_play{
+	position: relative;
+	overflow: hidden;
+
+}
+.CDList .pic{
+	width: 224px;
+	height: 224px;
+	transition: 1s;
+}
+.CDList .pic:hover{
+	transform: scale(1.1);
+}
+.cover_play{
+	 position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -35px;
+    width: 70px;
+    height: 70px;
+    display: none;
+}
+.pager{
+	text-align: center;
+}
+.pager a{
+	display: inline-block;
+	margin: 30px 20px;
+	color: #ccc;
+	font-size: 16px;
+}
+.current2{
+	background: #31c27c;
+	padding: 20px;
+}

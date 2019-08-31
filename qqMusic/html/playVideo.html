@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>视频播放页</title>
+	<!--封装好的视频布局样式-->
+<link rel="stylesheet" href="../css/jsmodern.min.css">
+
+<script src="../js/jquery.min.js"></script>
+
+<!--mp4视频插件-->
+<script src="../js/jsmodern.min.js"></script>
+<style>
+body{
+	background-image: url('../images/bg7.jpg');
+	background-size: 100%;
+}
+.wrap{
+	width: 970px;
+	margin: 20px auto;
+}
+a{
+	text-decoration: none;
+	padding: 5px 10px;
+	/*border-right: 1px solid #ccc;*/
+	color: #fff;
+
+}
+a:hover{
+	color:#31c27c;
+}
+#video {
+	width: 970px;
+	height: 594px;
+	margin: 50px auto 20px;
+	position: relative;
+	/*overflow: hidden;*/
+}
+
+#video video {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.VideoBtn {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin-left: -35px;
+	margin-top: -35px;
+	cursor: pointer;
+	z-index: 10;
+}
+.logo{
+	position: absolute;
+	left: 80%;
+	top: 3%;
+	z-index: 100;
+
+}
+.mv_detials{
+	color: #fff;
+	font-size: 18px;
+}
+.mv_detials_left{
+	display: inline-block;
+	float: left;
+
+}
+.mv_detials_left span{
+	color: #ccc;
+	margin-left: 10px;
+	font-size: 15px;
+}
+.mv_detials_right{
+	display: inline-block;
+	float: right;
+	
+
+}
+.mv_detials_right i{
+	display: inline-block;
+/*	float: left;*/
+}
+.icon1{
+	 display: inline-block;
+    width: 20px;
+    height: 18px;
+	background-image: url('../images/icon_sprite.png');
+    background-position: -120px -180px;
+    margin-right: 6px;
+}
+.icon3{
+	display: inline-block;
+    width: 21px;
+    height: 20px;
+	background-image: url('../images/comment.png');
+    background-position: -25px -100px;
+    margin-right: 6px;
+}
+.icon4{
+	display: inline-block;
+    width: 20px;
+    height: 18px;
+	background-image: url('../images/icon_sprite.png');
+    background-position: -140px -180px;
+    margin-right: 6px;
+}
+.icon5{
+	display: inline-block;
+    width: 20px;
+    height: 18px;
+	background-image: url('../images/icon_sprite.png');
+    background-position: -160px -180px;
+    margin-right: 6px;
+}
+.mv_detials_left:hover{
+	cursor: pointer;
+}
+
+</style>
+
+<!--视频插件调用方法-->
+<script>
+$(function () {
+	//视频
+	jsModern.video("#video");
+	//播放视频
+	$(".VideoBtn").click(function () {
+		var video = document.getElementById("videoShow");
+		video.play();
+		$('.VideoBtn').hide();
+	})
+	//监听视频的播放状态
+	var video = document.getElementById("videoShow");
+	video.oncanplay = function () {
+		$(".VideoBtn").show();
+		//$("#video").attr("poster","");
+	}
+	//视频播放事件
+	video.onplay = function () {
+		$("#videoShow").attr("poster", "");
+		$(".VideoBtn").hide();
+	};
+	video.onplaying = function () {
+		$(".VideoBtn").hide();
+	};
+
+	//视频暂停事件
+	video.onpause = function () {
+		$(".VideoBtn").show();
+	};
+	//点击视频周围暂停播放图片出现
+	video.onclick = function () {
+		if (video.paused) {
+			$(".VideoBtn").hide();
+			video.play();
+		} else {
+			$(".VideoBtn").show();
+			video.pause();
+		}
+	};
+})
+</script>
+</head>
+<body>
+	<div class="wrap">
+		<div id="video">
+		<!-- <img src="../images/logo.png" alt="" class="logo"> -->
+		<video src="../songs/poxiao.mp4" id="videoShow"></video>
+		<span class="VideoBtn"><img src="../images/bo1.png"></span>
+		</div>
+		<div class="mv_detials">
+			<div class="mv_detials_left">
+				破晓——吴亦凡<span>播放量：666.6万</span>
+			</div>
+			<div class="mv_detials_right">
+				<a href="#">
+					<i class="icon1"></i>在手机上播
+				</a>|
+				<a href="#">
+					举报
+				</a>|
+				<a href="#">
+					<i class="icon3"></i>
+				</a>|
+				<a href="#">
+					<i class="icon4"></i>
+				</a>|
+				<a href="#">
+					<i class="icon5"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

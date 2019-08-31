@@ -1,0 +1,89 @@
+/*banner*/
+.banner{
+	background: #000;
+	height: 306px;
+}
+.banner_box{
+	text-align: center;
+	color: #fff;
+	overflow: hidden;
+}
+.banner_box h1{
+	margin: 70px auto 20px;
+	font-weight: normal;
+	font-size: 3em;
+}
+.banner_box h3{
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.banner_box p{
+	margin: 10px auto 70px;
+
+}
+.banner .banner_box a{
+	display:inline-block;
+	color: #fff;
+	/*border: 1px solid #fff;*/
+	padding: 8px 45px;
+	box-sizing: border-box;
+	
+}
+
+
+/*内容*/
+.singer_tag div{
+	margin: 20px 0;
+}
+.singer_tag a{
+	margin: 12px;
+}
+.singer_tag_item{
+	background: #31c27c;
+	color: #fff;
+	padding: 5px 8px;
+	line-height: 5px;
+}
+.singer_tag .singer_tag_item:hover{
+	color: #fff;
+}
+.singer_tag .singer_tag_index{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.singer_list li{
+	width: 224px;
+	height: 245px;
+	margin:5px 8px;
+	text-align: center;
+}
+.singer_list p:hover{
+	color: #31c27c;
+	cursor: pointer;
+}
+.singer_list img{
+	display: inline-block;
+	margin-top: 40px;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+}
+.song_list_name li{
+	width: 220px;
+	height: 36px;
+	margin: 20px 10px;
+	text-align: left;
+}
+.pager{
+	text-align: center;
+}
+.pager a{
+	display: inline-block;
+	margin: 30px 20px;
+	color: #ccc;
+	font-size: 16px;
+}
+.current{
+	background: #31c27c;
+	padding: 20px;
+}

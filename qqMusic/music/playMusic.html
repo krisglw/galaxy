@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>音乐播放</title>
+	<script src='jquery-1.11.1.js'></script>
+	<style>
+		.icon{
+			position: fixed;
+			right: 60px;
+			top: 20px;
+			width: 50px;
+			height: 50px;
+			cursor: pointer;
+		}
+		.play{
+			animation: go 5s linear infinite;
+
+		}
+		/*.icon1{
+			animation-play-state: running;
+			 -webkit-animation-play-state: running;
+		}
+		.icon2{
+			animation-play-state: paused;
+			 -webkit-animation-play-state: paused;
+		}*/
+		@keyframes go{
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<img src="music.png" alt="" class="play icon">
+	<audio src="kris.mp3" autoplay=""></audio>
+	<script>
+		$(function(){
+			$('.icon').click(function(){
+			 a=$(this).css('animation-play-state');
+			console.log(a);
+			if(a=='running'){
+				$(this).css({"animation-play-state":"paused"});
+				$('audio')[0].pause();
+				}else{
+				$(this).css({"animation-play-state":"running"});
+				$('audio')[0].play();
+				
+
+				}
+				
+			})
+
+
+		})
+		
+	</script>
+</body>
+</html>

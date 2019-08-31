@@ -1,0 +1,97 @@
+body{
+	background-image: url('../images/bg4.jpg');
+	background-size: 100%;
+}
+.music_box{
+	margin: 60px auto;
+	overflow: hidden;
+
+}
+.pic{
+	float: left;
+}
+.h{
+	font-weight: normal;
+	line-height: 30px;
+	margin-top:0px;
+}
+.lyric_box{
+	display: inline-block;
+	height: 350px;
+	overflow: hidden;
+	color: #fff;
+	line-height: 25px;
+	margin-left: 30px;
+
+}
+.lyric{
+	width: 300px;
+	height: 400px;
+	overflow: hidden;
+	font-size: 16px;
+	color:#fdfc0f;
+}
+.play_box{
+	margin-top: 60px;
+	overflow: hidden;
+}
+.play_box i{
+	margin: 0 15px;
+}
+.play_box i:hover{
+	cursor: pointer;
+}
+.pre,.next{
+	display: inline-block;
+	width: 34px;
+	height: 40px;
+	color: #fff;
+	font-size:32px;
+}
+.change{
+	display: inline-block;
+	width: 34px;
+	height: 40px;
+	color: #fff;
+	font-size:32px;
+
+}
+.progressBar{
+	display: inline-block;
+	color: #fff;
+	overflow: hidden;
+	/*margin-top: 20px;*/
+}
+.palyBar{
+	display: inline-block;
+	width: 600px;
+	height: 6px;
+	background: #ccc;
+	border-radius: 2px;
+	float: left;
+	position: relative;
+	margin-bottom: 10px;
+	/*margin-left: 20px;*/
+}
+.palyIcon{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	position: absolute;
+	float: left;
+	/*margin-left: 10px;*/
+	margin-top: -5px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+.palyIcon:hover{
+	cursor: pointer;
+}
+.songName{
+	font-size: 15px;
+}
+.songTime{
+	margin-left: 400px;
+	margin-top: 10px;
+}

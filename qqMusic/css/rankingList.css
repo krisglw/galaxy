@@ -1,0 +1,392 @@
+.main {
+	 background: linear-gradient(to bottom, rgb(242,242,242), rgb(250,250,250));
+	 overflow: hidden;
+}
+.rankingList{
+	margin-top: 30px;
+	/*background: red;*/
+	/*height: 600px;*/
+	 overflow: hidden;
+
+}
+/*左边导航栏*/
+.leftNav{
+	width: 180px;
+	height: 1390px;
+	float: left;
+	/*margin-top: 30px;*/
+	border: 1px solid #ccc;
+	border-color: rgba(153,153,153,0.2);
+	line-height: 1.5;
+
+}
+.leftNav_title{
+	line-height: 60px;
+	font-size: 20px;
+	border-bottom: 1px solid #ccc;
+	margin: 10px;
+}
+.leftNav_head dd{
+	line-height: 20px;
+	margin: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.current_item{
+	background: #31c27c;
+}
+.current_item a{
+	color: #fff;
+
+}
+
+/*右边内容区*/
+.rightList{
+	margin-left: 30px;
+	float: left;
+	overflow: hidden;
+}
+.rightList_top h1{
+	display: inline-block;
+	font-weight: normal;
+}
+.rightList_top span{
+	margin-left: 10px;
+}
+.toolBar{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	margin-left: -335px;
+	/*overflow: hidden;*/
+
+}
+.toolBar a{
+	width: 110px;
+	height: 35px;
+	line-height: 35px;
+	display: inline-block;
+	/*padding: 5px 10px;*/
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	box-sizing: border-box;
+	margin:0 5px;
+	text-align: center;
+}
+.toolBar i{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background-image: url('../images/icon_sprite.png');
+	margin-right: -20px;
+	float: left;
+}
+.icon1{
+	background-position: -57px -220px;
+	margin-top: 10px;
+}
+.icon2{
+	background-position: -20px -0px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.icon3{
+	background-position: -40px -220px;
+	margin-top: 10px;
+	margin-left: 12px;
+}
+.icon4{
+	background-position: -120px -0px;
+	margin-top: 10px;
+}
+.icon5{
+	background-position: -140px -120px;
+	margin-top: 10px;
+	margin-left: 12px;
+}
+
+
+/*歌单*/
+/*头部*/
+.songList_header{
+	/*width: 700px;*/
+	height: 50px;
+	color: #ccc;
+	/*background: pink;*/
+
+}
+.songList_header_li1{
+	width: 130px;
+	/*background: red;*/
+}
+.songList_header_1i2{
+	width: 400px;
+}
+.songList_header_1i3{
+	width: 230px;
+}
+.songList_header_1i4{
+	width:70px;
+}
+
+/*list*/
+.rightList{
+	width: 950px;
+	margin-left: 40px;
+}
+.songList .songList_number{
+	width: 50px;
+	font-size: 24px;
+	text-align: center;
+
+}
+.songList_list{
+	line-height: 80px;
+	overflow: hidden;
+}
+.songList_list li{
+	position: relative;
+	overflow: hidden;
+}
+.songList_list li:nth-child(2n+1){
+	background-color: rgba(282,282,282,0.3);
+}
+.songList_list div{
+	display: inline-block;
+	height: 80px;
+}
+.songList_rank{
+	width: 80px;
+	color: #ccc;
+}
+.songList_songName{
+	width: 400px;
+}
+.songList_songName img{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	padding-right: 20px;
+	position: absolute;
+}
+.songList_songName_txt{
+	margin-left: 90px;
+	/*width: 60px;*/
+	height:80px;
+}
+.songList_songName_txt:hover{
+	color: #31c27c;
+	cursor: pointer;
+}
+/*.songList_songArtist:hover{
+	color: #31c27c;
+	cursor: pointer;
+}*/
+.songList_songArtist{
+	width: 230px;
+
+}
+.songList_songTime{
+	width:110px;
+	color: #ccc;
+
+}
+.songList_rank i{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-image: url('../images/icon_rank.png');
+	background-position: 0 -60px;
+	padding-right: 5px;
+	box-sizing: border-box;
+}
+.songList_number_top1{
+	color: red;
+}
+
+/*查看更多*/
+.seeMore{
+	margin: 20px 0;
+	height: 76px;
+}
+.seeMore a{
+	float: right;
+}
+
+/*comment*/
+.commentArea{
+	margin-top: 20px;
+}
+.comment_header{
+	overflow: hidden;
+}
+.comment_header h2{
+	margin: 10px 10px 10px 0px;
+	font-weight: normal;
+}
+.comment_header h2 span{
+	color: #ccc;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.comment_input{
+	width: 940px;
+	height: 100px;
+	background-color: #f5f5f5;
+	border: 1px solid #ececec;
+	color: #ccc;
+}
+.comment_input_inner{
+	height: 70px;
+	font-size: 16px;
+}
+.comment_input .comment_input_txtBlur{
+	width: 930px;
+	height: 60px;
+	resize: none;
+	outline: none;
+	margin: 10px 0px 0px 10px;
+	/*color: #ddd;*/
+}
+.comment_input_txtThin{
+	width: 100px;
+	height: 30px;
+	float: right;
+}
+ .comment_input .comment_input_txtThin span{
+	color: #31c27c;
+}
+.sendReply{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	margin: 15px 0;
+	float: right;
+	margin-right: -60px;
+}
+.sendReply i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url('../images/comment.png');
+	background-position: 0px 0px;
+	position: absolute;
+	margin-top: 5px;
+	/*padding-right: 20px;*/
+	box-sizing: border-box;
+}
+.sendReply a{
+	margin-left: 30px;
+}
+/*评论内容*/
+.comment_content{
+	margin: 30px 0;
+	overflow: hidden;	
+}
+.comment_content_header{
+	border-bottom: 1px solid #ccc;
+}
+.comment_content h4{
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.commentUl{
+	overflow: hidden;
+}
+.commentLi{
+	width: 950px;
+	height: 120px;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 5px;
+	position: relative;
+	overflow: hidden;
+
+}
+.commentLi img{
+	width: 38px;
+	height: 38px;
+	line-height: 30;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	margin-top: 20px;
+	/*margin-top: -40px;*/
+}
+.commentLi h4{
+	display: inline-block;
+}
+.commentLi_right{
+	margin-left: 50px;
+	display: inline-block;
+	font-size: 14px;
+	/*overflow: hidden;*/
+
+}
+.commentLi_right h5{
+	margin-top: 20px;
+	font-size: 15px;
+	color: #ccc;
+	font-weight: normal;
+}
+.commentLi_right h5:hover{
+	cursor: pointer;
+	color: #31c27c;
+
+}
+.commentLi_right p{
+	margin-bottom: 18px;
+}
+.commentLi_right a{
+	font-size: 14px;
+}
+.comment_interaction{
+	width: 950px;
+	/*position: relative;*/
+}
+.comment_interaction span{
+	float: left;
+	color: #ccc;
+	overflow: hidden;
+}
+.comment_intrec{
+	width: 400px;
+	margin-left: 500px;
+	overflow: hidden;
+}
+.comment_intrec a{
+	display: inline-block;
+	/*width: 80px;*/
+	padding: 0 10px;
+}
+.comment_intrec i{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background-image: url('../images/comment.png');
+}
+.like i{
+	background-position: 0 -25px;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.feedback i{
+	background-position: -25px -50px;
+}
+.accusation{
+	visibility: hidden;
+}
+
+/*pager*/
+.pager{
+	text-align: center;
+}
+.pager a{
+	display: inline-block;
+	margin: 30px 20px;
+	color: #ccc;
+	font-size: 16px;
+}
+.current2{
+	background: #31c27c;
+	padding: 20px;
+}

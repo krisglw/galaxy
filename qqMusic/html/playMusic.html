@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>音乐播放界面</title>
+	<link rel="stylesheet" href="../fonts/glyphicons-halflings-regular.ttf">
+	<link rel="stylesheet" href="../js/bootstrap.css">
+	<script src="../js/jquery-1.11.1.js"></script>
+	<script src="../js/public.js"></script>
+	<script src="../js/playMusic.js"></script>
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/playMusic.css">
+</head>
+<body>
+	<audio src="../songs/kris.mp3" autoplay=""></audio>
+	<div class="layout music_box">
+		<img src="../images/300(7).jpg" alt="" class="pic">
+		<div class="lyric_box">
+			<h3 class="h">歌曲名：大碗宽面</h3>
+			<h3 class="h">歌手名：吴亦凡</h3>
+			<h4 class="h">歌曲名：大碗宽面</h4>
+			<div class="lyric">
+				<div class="lyric_scroll">
+					<p data-id="line_0" class="">大碗宽面 - 吴亦凡</p>
+					<p data-id="line_1">词：吴亦凡</p>
+					<p data-id="line_2">曲：吴亦凡</p>
+					<p data-id="line_3">编曲：李偲菘/廖正星</p>
+					<p data-id="line_4" class="">制作：吴亦凡</p>
+					<p data-id="line_5" class="">碗大 宽无影</p>
+					<p data-id="line_6" class="">面长 消失</p>
+					<p data-id="line_7" class="">像儿时的回忆</p>
+					<p data-id="line_8" class="">从来不敢去相信</p>
+					<p data-id="line_9" class="">大碗能让你开心</p>
+					<p data-id="line_10" class="">但这确是我本意</p>
+					<p data-id="line_11" class="">也许是一种天意</p>
+					<p data-id="line_12" class="">切磋武艺切磋一下</p>
+					<p data-id="line_13" class="">武林高手来一比高下</p>
+					<p data-id="line_14" class="">千军万马就一声令下</p>
+					<p data-id="line_15" class="">面馆相见这千钧一发</p>
+					<p data-id="line_16" class="">何必针锋相对</p>
+					<p data-id="line_17" class="">你看这碗又大又圆</p>
+					<p data-id="line_18" class="">相聚就要举起杯</p>
+					<p data-id="line_19" class="">你看这面又长又宽</p>
+					<p data-id="line_20" class="">武侠小说看流泪</p>
+					<p data-id="line_21" class="">从来不相信魔鬼</p>
+					<p data-id="line_22" class="">有时生活特别累</p>
+					<p data-id="line_23" class="">别馋大碗宽面别流泪</p>
+					<p data-id="line_24" class="">这碗大</p>
+					<p data-id="line_25" class="on">千万别虚荣心作祟</p>
+					<p data-id="line_26">真心话</p>
+					<p data-id="line_27">这大碗宽面也很贵</p>
+					<p data-id="line_28">先别说话</p>
+					<p data-id="line_29">不想给你机会先别怼</p>
+					<p data-id="line_30">就散了吧</p>
+					<p data-id="line_31">听完这首歌就洗洗睡</p>
+					<p data-id="line_32">我这一生漂泊四海看淡了今朝</p>
+					<p data-id="line_33">月高高的挂无暇</p>
+					<p data-id="line_34">人生能有几次机会相聚甚是少</p>
+					<p data-id="line_35">情谊别轻易放掉</p>
+					<!-- wrong -->
+					<p data-id="line_16" class="">何必针锋相对</p>
+					<p data-id="line_17" class="">你看这碗又大又圆</p>
+					<p data-id="line_18" class="">相聚就要举起杯</p>
+					<p data-id="line_19" class="">你看这面又长又宽</p>
+					<p data-id="line_20" class="">武侠小说看流泪</p>
+					<p data-id="line_21" class="">从来不相信魔鬼</p>
+					<p data-id="line_22" class="">有时生活特别累</p>
+					<p data-id="line_23" class="">别馋大碗宽面别流泪</p>
+					<p data-id="line_24" class="">这碗大</p>
+					<p data-id="line_25" class="on">千万别虚荣心作祟</p>
+					<p data-id="line_26">真心话</p>
+					<p data-id="line_27">这大碗宽面也很贵</p>
+					<p data-id="line_28">先别说话</p>
+					<p data-id="line_29">不想给你机会先别怼</p>
+					<p data-id="line_30">就散了吧</p>
+					<p data-id="line_31">听完这首歌就洗洗睡</p>
+					<p data-id="line_32">我这一生漂泊四海看淡了今朝</p>
+					<p data-id="line_33">月高高的挂无暇</p>
+					<p data-id="line_34">人生能有几次机会相聚甚是少</p>
+					<p data-id="line_35">情谊别轻易放掉</p>
+				</div>
+			</div>
+		</div>
+		<div class="play_box">
+			<i class="glyphicon glyphicon-step-backward pre"></i>
+			<i class="glyphicon glyphicon-pause change"></i>
+			<i class="glyphicon glyphicon-step-forward next"></i>
+			<div class="progressBar">
+				<p>
+					<span class="songName">大碗宽面——吴亦凡</span>
+					<span class="songTime">
+						<span class="time"></span>/03:40
+					</span>
+				</p>
+				<div class="palyBar">
+					<div class="palyIcon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
